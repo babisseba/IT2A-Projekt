@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>rocnikovy_projekt</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\image40.png" />
+    <None Remove="images\uvod1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\image40.png" />
+    <Resource Include="images\uvod1.png" />
+  </ItemGroup>
+
+</Project>

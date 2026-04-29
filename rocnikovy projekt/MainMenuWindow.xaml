@@ -1,0 +1,20 @@
+﻿<Window x:Class="rocnikovy_projekt.MainMenuWindow"
+        WindowState="Maximized" 
+WindowStyle="None" 
+ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Viewbox Stretch="Fill">
+        <Grid Width="1000" Height="600">
+            <Image Source="images/uvod1.png" Stretch="Fill"/>
+
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,100,0,0">
+                <Button Content="START HRY" Width="200" Height="50" Margin="10" 
+                        FontSize="20" FontWeight="Bold" Click="StartHry_Click" RenderTransformOrigin="0.508,0.532"/>
+                <Button Content="KONEC" Width="200" Height="50" Margin="10" 
+                        FontSize="20" FontWeight="Bold" Click="Konec_Click"/>
+            </StackPanel>
+        </Grid>
+    </Viewbox>
+</Window>

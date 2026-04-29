@@ -1,0 +1,22 @@
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\bin\Debug\net8.0-windows\rocnikovy projekt.exe
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\bin\Debug\net8.0-windows\rocnikovy projekt.deps.json
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\bin\Debug\net8.0-windows\rocnikovy projekt.runtimeconfig.json
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\bin\Debug\net8.0-windows\rocnikovy projekt.dll
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\bin\Debug\net8.0-windows\rocnikovy projekt.pdb
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\MainMenuWindow.baml
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\MainMenuWindow.g.cs
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\rocnikovy projekt_MarkupCompile.cache
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\rocnikovy projekt_MarkupCompile.lref
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\rocnikovy projekt.g.resources
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\rocnikovy projekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\rocnikovy projekt.AssemblyInfoInputs.cache
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\rocnikovy projekt.AssemblyInfo.cs
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\rocnikovy projekt.csproj.CoreCompileInputs.cache
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\rocnikovy projekt.dll
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\refint\rocnikovy projekt.dll
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\rocnikovy projekt.pdb
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\rocnikovy projekt.genruntimeconfig.cache
+C:\Users\61781babis\source\repos\rocnikovy projekt\rocnikovy projekt\obj\Debug\net8.0-windows\ref\rocnikovy projekt.dll
