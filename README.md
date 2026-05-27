@@ -3,4 +3,4 @@ WPF
 Dělal jsem grafiku.
 Začal jsem to dělat s pomocí obrazku z ai a snazim se udělat menu a začátek menu, ale nedaří se.
 Mám menu a rozpracovanou první scénu.
-27.5. - Nejde odevzdat - moc velka velikost souboru
+27.5. - Mam hotovo ale, nefunguje odevzdaní - moc velka velikost souboru
