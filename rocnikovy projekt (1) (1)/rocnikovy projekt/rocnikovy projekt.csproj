@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>rocnikovy_projekt</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\auto.png" />
+    <None Remove="images\brana_roznuto.png" />
+    <None Remove="images\brana_zhasnuto.png" />
+    <None Remove="images\cela.png" />
+    <None Remove="images\cesta.png" />
+    <None Remove="images\medved.png" />
+    <None Remove="images\mesto.png" />
+    <None Remove="images\predsin.png" />
+    <None Remove="images\uvod1.png" />
+    <None Remove="images\ven.png" />
+    <None Remove="images\ven1_zhasnuto.png" />
+    <None Remove="images\ven2_zhasnuto.png" />
+    <None Remove="images\vítězství1.png" />
+    <None Remove="images\vítězství2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\auto.png" />
+    <Resource Include="images\brana_roznuto.png" />
+    <Resource Include="images\brana_zhasnuto.png" />
+    <Resource Include="images\cela.png" />
+    <Resource Include="images\cela_cista.png" />
+    <Resource Include="images\cela_spinava.png" />
+    <Resource Include="images\cesta.png" />
+    <Resource Include="images\medved.png" />
+    <Resource Include="images\mesto.png" />
+    <Resource Include="images\kanal.png" />
+    <Resource Include="images\predsin.png" />
+    <Resource Include="images\uvod1.png" />
+    <Resource Include="images\ven.png" />
+    <Resource Include="images\ven1_zhasnuto.png" />
+    <Resource Include="images\ven2_zhasnuto.png" />
+    <Resource Include="images\vítězství1.png" />
+    <Resource Include="images\vítězství2.png" />
+  </ItemGroup>
+
+</Project>

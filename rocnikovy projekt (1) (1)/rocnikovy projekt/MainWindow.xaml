@@ -1,0 +1,160 @@
+﻿<Window x:Class="rocnikovy_projekt.MainWindow"
+        WindowState="Maximized" 
+        WindowStyle="None" 
+        ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Polda: Útěk ze stínu" Height="600" Width="1000" WindowStartupLocation="CenterScreen">
+
+    <Viewbox Stretch="Fill">
+        <Grid Width="1000" Height="600" Cursor="">
+
+            <Grid x:Name="CelaScene" Visibility="Collapsed">
+                <Image x:Name="PozadiCely" Source="/images/cela_spinava.png" Stretch="Fill"/>
+                <Canvas>
+                    <Button x:Name="Miska" Canvas.Left="264" Canvas.Top="190" Width="80" Height="40" Opacity="0" Cursor="Hand" Click="OnHotspotClick"/>
+                    <Button x:Name="Plakat" Canvas.Left="860" Canvas.Top="120" Width="100" Height="180" Opacity="0" Cursor="Hand" Click="OnHotspotClick"/>
+                    <Button x:Name="Polstar" Canvas.Left="730" Canvas.Top="480" Width="180" Height="80" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button x:Name="Skrinka" Canvas.Left="930" Canvas.Top="210" Width="70" Height="130" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button x:Name="Mrize" Canvas.Left="480" Canvas.Top="92" Width="140" Height="100" Opacity="0" Cursor="Hand" Click="OnHotspotClick"/>
+                    <Button x:Name="Lano" Canvas.Left="360" Canvas.Top="500" Width="140" Height="90" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button x:Name="Bota" Canvas.Left="500" Canvas.Top="480" Width="80" Height="40" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Center" VerticalAlignment="Top" Tag="Bota air jordan 4, ale je jenom 1 tak mi k ničemu není."/>
+                    <Button x:Name="Umyvadlo" Canvas.Left="646" Canvas.Top="275" Width="130" Height="100" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Zrezivělé umyvadlo. Je to hnusný z toho pít, ale co už."/>
+                    <Button x:Name="Pavouk" Canvas.Left="577" Canvas.Top="150" Width="60" Height="60" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Můj jediný kámoš v cele i když mě moc nemusí a dělá na mě divné obličeje. Ahoj Karle."/>
+                    <Button x:Name="Postel" Canvas.Left="80" Canvas.Top="400" Width="300" Height="150" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Pružiny tlačí do zad, dá se to pochopit."/>
+                </Canvas>
+            </Grid>
+
+            <Grid x:Name="BranaScene" Visibility="Collapsed" Cursor="">
+                <Image x:Name="PozadiBrany" Source="pack://application:,,,/images/brana_roznuto.png" Stretch="Fill"/>
+                <Canvas Cursor="">
+                    <Button x:Name="Mince" Canvas.Left="148" Canvas.Top="485" Width="40" Height="40" Opacity="0" Cursor="Hand" Click="OnHotspotClick"/>
+                    <Button x:Name="HasakBrana" Canvas.Left="332" Canvas.Top="505" Width="64" Height="20" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button x:Name="OlejnickaBrana" Canvas.Left="346" Canvas.Top="446" Width="36" Height="42" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Button x:Name="Vrana" Canvas.Left="270" Canvas.Top="86" Width="60" Height="60" Opacity="0" Cursor="Hand" Click="OnHotspotClick"/>
+                    <Button x:Name="Skrin" Canvas.Left="226" Canvas.Top="316" Width="104" Height="90" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Button x:Name="Prasklina" Canvas.Left="10" Canvas.Top="216" Width="100" Height="100" Opacity="0" Cursor="Hand" Click="OnHotspotClick"/>
+                    <Button x:Name="BudkaOKno" Canvas.Left="696" Canvas.Top="216" Width="144" Height="104" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Button Content="Jít ke kanálu➔" Canvas.Left="870" Canvas.Top="280" Width="120" Height="40" Click="JitKBrane_Click" Cursor="Hand" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Button x:Name="Vrata" Canvas.Left="400" Canvas.Top="194" Width="200" Height="250" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Tudy to nepůjde, hlavní vrata jsou pevně zamčená."/>
+                </Canvas>
+            </Grid>
+
+            <Grid x:Name="KanalScene" Visibility="Collapsed">
+                <Image x:Name="PozadiKanalu" Source="pack://application:,,,/images/ven1_zhasnuto.png" Stretch="Fill"/>
+                <Canvas>
+                    <Button x:Name="Pneumatiky" Canvas.Left="20" Canvas.Top="250" Width="300" Height="250" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Hromada starých pneumatik a sutin. Tudy přes zeď nepřešplhám, nahoře je ostnatý drát."/>
+                    <Button x:Name="NapisZed" Canvas.Left="580" Canvas.Top="280" Width="80" Height="80" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Někdo tu do zdi vyryl 'SVOBODA NEBO SMRT'. Můj člověk."/>
+                    <Button x:Name="Bedny" Canvas.Left="260" Canvas.Top="300" Width="150" Height="100" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Dřevěné bedny. Jsou úplně prázdné."/>
+                    <Button x:Name="Poklop" Canvas.Left="620" Canvas.Top="430" Width="233" Height="120" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Button Content="Jít k bráně➔" Canvas.Left="793" Canvas.Top="280" Width="120" Height="40" Click="JitKeKanalu_Click" Cursor="Hand" FontSize="16" FontWeight="Bold"/>
+                </Canvas>
+            </Grid>
+
+            <Grid x:Name="StokaScene" Visibility="Collapsed" Cursor="">
+                <Image x:Name="PozadiStoky" Source="pack://application:,,,/images/cesta.png" Stretch="Fill"/>
+                <Canvas>
+                    <Button x:Name="VzkazRiddle" Canvas.Left="500" Canvas.Top="250" Width="58" Height="80"  Cursor="Hand" Click="OnHotspotClick" Tag="Mozky jsou jako houby, nasávají informace, tak doufám, že jsi četl odbornou literaturu a pamatuješ,jak to v příbězích bývá?" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Button x:Name="Cesta1_Freedom" Canvas.Left="175" Canvas.Top="250" Width="200" Height="200" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Button x:Name="Cesta2_Prison" Canvas.Left="715" Canvas.Top="250" Width="200" Height="200" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Canvas>
+            </Grid>
+
+            <Grid x:Name="HraniceScene" Visibility="Collapsed">
+                <Image x:Name="PozadiHranice" Source="pack://application:,,,/images/ven.png" Stretch="Fill"/>
+                <Canvas>
+                    <Button x:Name="Kamen" Canvas.Left="854" Canvas.Top="393" Width="146" Height="49" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button x:Name="Drat" Canvas.Left="463" Canvas.Top="297" Width="100" Height="50" Opacity="0" Cursor="Hand" Click="OnHotspotClick"/>
+
+                    <Button x:Name="CestaLes" Content="Do lesa" Canvas.Left="927" Canvas.Top="226" Width="63" Height="93" Click="Navigace_Click" Cursor="Hand" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0"/>
+                    <Button x:Name="CestaAuto" Content="K autu" Canvas.Top="147" Width="120" Height="200" Click="Navigace_Click" Cursor="Hand" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Opacity="0"/>
+                    <Button x:Name="CestaMesto" Content="Do města" Canvas.Left="770" Canvas.Top="226" Width="120" Height="54" Click="Navigace_Click" Cursor="Hand" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Opacity="0"/>
+                </Canvas>
+            </Grid>
+
+            <Grid x:Name="LesScene" Visibility="Collapsed">
+                <Image Source="pack://application:,,,/images/medved.png" Stretch="Fill"/>
+                <Canvas>
+                    <Button x:Name="MedvedSmrt" Width="1000" Height="600" Opacity="0" Cursor="Hand" Click="OnHotspotClick"/>
+                </Canvas>
+            </Grid>
+
+            <Grid x:Name="AutoScene" Visibility="Collapsed">
+                <Image Source="pack://application:,,,/images/auto.png" Stretch="Fill"/>
+                <Canvas>
+                    <Button x:Name="AutoZamek" Canvas.Left="397" Canvas.Top="274" Width="67" Height="150" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Button x:Name="ZpetOdAuta" Content="Zpět" Canvas.Left="890" Canvas.Top="223" Width="100" Height="40" Click="OnHotspotClick" Cursor="Hand" FontSize="16" FontWeight="Bold" BorderBrush="AliceBlue" Background="Gray"/>
+                </Canvas>
+            </Grid>
+
+            <Grid x:Name="MestoScene" Visibility="Collapsed">
+                <Image Source="/images/mesto.png" Stretch="Fill"/>
+                <Canvas>
+                    <Button x:Name="Nadrazi" Canvas.Left="750" Canvas.Top="175" Width="250" Height="150" Opacity="0" Cursor="Hand" Click="OnHotspotClick"/>
+                    <Button x:Name="Policiste" Canvas.Left="128" Canvas.Top="268" Width="144" Height="102" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Button x:Name="ZamceneDvere" Canvas.Top="250" Width="123" Height="200" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Button x:Name="Nakladak" Canvas.Left="588" Canvas.Top="175" Width="82" Height="195" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Canvas>
+            </Grid>
+
+            <Grid x:Name="PredsinScene" Visibility="Collapsed">
+                <Image Source="/images/predsin.png" Stretch="Fill"/>
+                <Canvas>
+                    <Button x:Name="AKlicky" Canvas.Left="417" Canvas.Top="318" Width="50" Height="21" Opacity="0" Cursor="Hand" Click="OnHotspotClick" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button x:Name="Botnik" Canvas.Left="70" Canvas.Top="390" Width="260" Height="200" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Starý botník. Jsou v něm jen staré zaprášené boty."/>
+                    <Button x:Name="Radio" Canvas.Left="282" Canvas.Top="224" Width="160" Height="83" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Staré dřevěné rádio. Pod ním leží klíčky od náklaďáku!" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button x:Name="Kvetinac" Canvas.Left="880" Canvas.Top="450" Width="120" Height="150" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Hlína je úplně suchá, kytka je dávno mrtvá."/>
+                    <Button x:Name="Vesak" Canvas.Left="765" Canvas.Top="118" Width="129" Height="316" Opacity="0" Cursor="Hand" Click="OnHotspotClick" Tag="Staré kabáty a klobouky. Kapsy jsou prázdné." HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Button x:Name="ZpetPredsin" Canvas.Left="568" Canvas.Top="109" Width="161" Height="334" Click="Navigace_Click" Cursor="Hand" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0"/>
+                </Canvas>
+            </Grid>
+
+            <Grid x:Name="VyhraAutoScene" Visibility="Collapsed" Panel.ZIndex="50">
+                <Image Source="pack://application:,,,/images/vítězství1.png" Stretch="Fill"/>
+                <TextBlock Text="UTEKL JSI!" Foreground="White" FontSize="80" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="5"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <Button Content="Zpět do menu" Width="200" Height="50" VerticalAlignment="Bottom" Margin="0,0,0,50" Click="ZpetMenu_Click" Cursor="Hand" FontSize="20"/>
+            </Grid>
+
+            <Grid x:Name="VyhraNakladakScene" Visibility="Collapsed" Panel.ZIndex="50">
+                <Image Source="pack://application:,,,/images/vítězství2.png" Stretch="Fill"/>
+                <TextBlock Text="UTEKL JSI!" Foreground="White" FontSize="80" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="5"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <Button Content="Zpět do menu" Width="200" Height="50" VerticalAlignment="Bottom" Margin="0,0,0,50" Click="ZpetMenu_Click" Cursor="Hand" FontSize="20"/>
+            </Grid>
+
+            <Grid x:Name="HerniUI" Visibility="Collapsed">
+                <Border VerticalAlignment="Top" Height="60" Background="#A0000000" Margin="200,520,200,0">
+                    <StackPanel x:Name="InventoryPanel" Orientation="Horizontal" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Name="DialogBox" Background="#CCF8DC00" BorderBrush="DimGray" BorderThickness="2" CornerRadius="5" Width="300" Height="130" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,50,50,0" Visibility="Collapsed">
+                    <TextBlock Name="DialogText" TextWrapping="Wrap" Margin="10" FontFamily="Ink Free" FontSize="15" FontWeight="Bold" Foreground="DarkSlateGray"/>
+                </Border>
+                <Button Content="Zpět do menu" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ZpetMenu_Click" Padding="5" Background="#80000000" Foreground="AliceBlue" Cursor="Hand"/>
+            </Grid>
+
+            <Grid x:Name="GameOverScene" Visibility="Collapsed" Background="Black" Panel.ZIndex="100">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="KONEC HRY" Foreground="DarkRed" FontSize="60" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                    <TextBlock x:Name="GameOverText" Text="Zemřel jsi." Foreground="White" FontSize="20" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Width="600" Margin="0,0,0,40"/>
+                    <Button Content="Zkusit znovu od začátku" Width="250" Height="50" FontSize="18" Cursor="Hand" Click="Restart_Click" Background="#404040" Foreground="White"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="MenuScene" Visibility="Visible">
+                <Image Source="/images/uvod1.png" Stretch="Fill"/>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,100,0,0">
+                    <Button Content="START HRY" Width="200" Height="50" Margin="10" FontSize="20" FontWeight="Bold" Click="StartHry_Click" Cursor="Hand"/>
+                    <Button Content="KONEC" Width="200" Height="50" Margin="10" FontSize="20" FontWeight="Bold" Click="Konec_Click" Cursor="Hand"/>
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+    </Viewbox>
+</Window>
